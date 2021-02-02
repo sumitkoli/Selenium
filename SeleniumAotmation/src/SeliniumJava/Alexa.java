@@ -59,14 +59,15 @@ public class Alexa {
 			Thread.sleep(3000);
 			
 			d.findElement(By.id("input-site")).sendKeys(data1);
-
+			Thread.sleep(3000);
 			
 			d.findElement(By.id("input-keyword-search")).click();
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			try {
 				
 			
 			String g=d.findElement(By.xpath("//*[@id=\"card_mini_trafficMetrics\"]/div[3]/div[2]/div[1]")).getText();
+			Thread.sleep(5000);
 			//#ipinfo > table > tbody > tr > td:nth-child(3)
 			//*[@id="ipinfo"]/table/tbody/tr/td[3]
 			System.out.println("Value is : "+g);
